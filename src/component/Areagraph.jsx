@@ -1,7 +1,7 @@
 import React from 'react';
 import { AreaChart, CartesianGrid,Area, XAxis,YAxis,Tooltip,} from 'recharts';
 
-export default function Areagraph() {
+export default function Areagraph(props) {
   const data = [
     {name:"Rishabh",age:21},
     {name:"Shashwat",age:23},
@@ -26,7 +26,7 @@ export default function Areagraph() {
         <p className="pldata">Another $48,346 to Goal</p>
       </div>
       <div>
-        <AreaChart width={550} height={250} data={data}
+        <AreaChart width={props.isMobile?350:550} height={250} data={data}
           margin={{ top: 0, right: 40, left: 0, bottom: 0 }}>
           <defs>
             <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">

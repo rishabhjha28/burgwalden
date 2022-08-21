@@ -61,6 +61,7 @@
   margin-bottom: 40px;
 }
 .threedot{
+  cursor: pointer;
   border: 1px solid rgb(248, 243, 243);
   height: 25px;
   padding: 0px 5px;
@@ -77,4 +78,42 @@
 .info-secondhalf{
   margin-bottom: 35px;
   margin-right: 325px;
+}
+@media only screen and (max-width: 1200px){
+  .App{
+    flex-direction: column;
+    margin:20px 0px;
+
+  }
+  .barContainer{
+    margin:5px 0px;
+  }
+  .areacontainer{
+    margin:5px 0px;
+  }
+}
+
+@media only screen and (max-width: 645px){
+  .areacontainer{
+    width: 350px;
+    border: 5px solid lightgrey;
+  }
+  .threedot{
+    margin-left: 100px;
+  }
+  .info-secondhalf{
+    margin-right:125px
+  }
+  .barContainer{
+    border: 5px solid lightgrey;
+    width: 300px;
+    /* justify-content: center; */
+  }
+  .barInfo{
+    margin-right: 100px;
+  }
+  .bar{
+    width: 300px;
+  }
+
 }
