@@ -30,15 +30,15 @@ export default function Areagraph(props) {
           margin={{ top: 0, right: 40, left: 0, bottom: 0 }}>
           <defs>
             <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="teal" stopOpacity={0.8}/>
-              <stop offset="95%" stopColor="#8884d8" stopOpacity={0}/>
+              <stop offset="5%" stopColor="#81dbd3" stopOpacity={0.8}/>
+              <stop offset="70%" stopColor="#8884d8" stopOpacity={0}/>
             </linearGradient>
           </defs>
           <XAxis dataKey="name" tickLine={false} axisLine={false}/>
           <YAxis axisLine = {false} tickLine = {false}/>
           <CartesianGrid vertical = {false} strokeDasharray="3"/>
           <Tooltip />
-          <Area type = 'natural' dataKey="age" unit = ' year' stroke="#8884d8"  fillOpacity={1} fill="url(#colorUv)" />
+          <Area type = 'natural' dataKey="age" unit = ' year' stroke="#81dbd3" strokeWidth={4} fillOpacity={1} fill="url(#colorUv)" />
         </AreaChart>
       </div>
     </div>
