@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 100px;
+}
+.barContainer{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:flex-end;
+  height: 400px;
+  width: 500px;
+  border: 20px solid lightgrey;
+  border-radius: 1px;
+  margin-right: 5px;
+
+}
+.gainloss{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.bar{
+  width: 500px;
+}
+.barInfo{
+  margin-right: 250px;
+  margin-bottom: 1rem;
+}
+.dollor{
+  color: grey;
+  font-size: 1rem;
+  position: relative;
+  bottom: 10px;
+}
+.percentagepl{
+  background-color:rgb(67, 207, 207);
   color: white;
+  border-radius:5px;
+  font-size: 1.5rem;
 }
-
-.App-link {
-  color: #61dafb;
+.pldata{
+  color: grey;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.areacontainer{
+  display: flex;
+  border: 20px solid lightgrey;
+  margin-left: 5px;
+  flex-direction: column;
+  align-items:center;
+  justify-content:flex-end;
+  height: 450px;
+  width: 600px;
+  border-radius: 1px;
+}
+.info-firsthalf{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.threedot{
+  border: 1px solid rgb(248, 243, 243);
+  height: 25px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  background-color: lightgrey;
+  color: grey;
+  font-weight: bolder;
+  margin-left: 300px;
+}
+.bold{
+  font-weight: bolder;
+  font-size: large;
+}
+.info-secondhalf{
+  margin-bottom: 35px;
+  margin-right: 325px;
 }
